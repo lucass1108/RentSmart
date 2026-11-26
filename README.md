@@ -1,18 +1,34 @@
-# RentSmart - R.M Imóveis
+# RentSmart — R.M Imóveis
 
-Este projeto foi desenvolvido como parte da disciplina de Algorithmic Thinking & Introduction to Object-Oriented Programming.
+Calculadora de aluguel para imobiliária (apartamento, casa, estúdio) com regras de negócio por tipo de imóvel, taxa contratual parcelável e projeção mensal em CSV.
 
-## Requisitos
-- Python 3.x instalado.
-- Não são necessárias bibliotecas externas.
+## Problema
+Calcular o aluguel manualmente para diferentes tipos de imóvel (apartamento, casa, estúdio) com regras variadas (quartos, garagem, desconto por crianças, vagas extras) e uma taxa contratual parcelável é propenso a erros e trabalhoso.
 
-## Como Executar
-1. Extraia os arquivos.
-2. Abra o terminal (ou prompt de comando) na pasta do arquivo extraído.
-3. Execute o comando: `python main.py`
-4. Siga as instruções interativas no terminal.
+## Solução
+Programa em Python orientado a objetos que coleta os dados do imóvel via terminal, aplica as regras de negócio de cada tipo e gera um orçamento detalhado + arquivo `projecao_locacao.csv` com a projeção de 12 meses.
 
 ## Funcionalidades
-- Cálculo automatizado das regras de negócio para Casas, Apartamentos e Estúdios.
-- Orientação a Objetos (Classes, Herança, Polimorfismo).
-- Geração automática do arquivo `projecao_locacao.csv` contendo a projeção dos pagamentos de 12 meses.
+- Cálculo automatizado para Apartamento, Casa e Estúdio.
+- Regras: quartos, garagem, desconto de 5% sem crianças, vagas extras no estúdio.
+- Taxa contratual de R$ 2.000,00 parcelável em 1 a 5 vezes.
+- Geração automática de `projecao_locacao.csv` (12 meses).
+- Orientação a Objetos (herança e polimorfismo).
+
+## Stack
+- Python 3.x (sem dependências externas)
+
+## Como rodar
+```powershell
+python main.py
+```
+Siga as instruções interativas no terminal.
+
+## Estrutura
+```
+RentSmart_Projeto_Completo/
+└── main.py
+```
+
+## Autor
+Lucas Barbosa Pedro — [@lucass1108](https://github.com/lucass1108)
